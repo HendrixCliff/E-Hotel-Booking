@@ -13,7 +13,7 @@ router.use(isAuth, isAdmin); // all below ro
 
 
 router.get('/', getAllSections);
-router.post('/specifeidSection', getSectionByKey);
+router.post('/specifiedSection', getSectionByKey);
 // routes/sectionRoutes.js
 
 router.post('/', parser.array('files'), createOrUpdateSection);
